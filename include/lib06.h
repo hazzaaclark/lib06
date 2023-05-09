@@ -17,6 +17,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+/* ASSUMING THE PROJECT IS BEING BUILT WITH WINDOWS */ 
+/* ACCESS THE DESIGANTED CALLING CONVENTION */ 
+
 #if defined(_WIN32)
     #ifdef LIB_06_ EXPORT
        #define LIB_06_MAIN DECLSPEC (dllexport)
