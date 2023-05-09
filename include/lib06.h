@@ -21,7 +21,7 @@
 /* ACCESS THE DESIGANTED CALLING CONVENTION */ 
 
 #if defined(_WIN32)
-    #ifdef LIB_06_ EXPORT
+    #ifdef LIB_06_EXPORT
        #define LIB_06_MAIN DECLSPEC (dllexport)
     #else
        #define LIB_06_MAIN DECLSPEC (dllimport)
