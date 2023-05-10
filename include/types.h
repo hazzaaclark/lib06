@@ -18,6 +18,9 @@
 
 #include <stdint.h>
 
+/* DEFINE MACROS TO REFER TO THE READING AND WRITING OF DATA */
+/* TO AND FROM THE DECOMP */
+
 #define DATA_POINTER (TYPE, NAME, ADDRESS) \
 static TYPE(&NAME = *TYPE(sizeof(ADDRESS));
 
