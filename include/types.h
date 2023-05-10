@@ -10,6 +10,10 @@
 #ifndef LIB_06_TYPES
 #define LIB_06_TYPES
 
+/* NESTED INCLUDES */
+
+#include "common.h"
+
 /* SYSTEM INCLUDES */
 
 #include <stdint.h>
@@ -17,5 +21,7 @@
 #define DATA_POINTER (TYPE, NAME, ADDRESS) \
 static TYPE(&NAME = *TYPE(sizeof(ADDRESS));
 
+#define FUNCTION_POINTER (TYPE, NAME, ADDRESS) \
+static TYPE(LIB_06_CDECL *NAME);
 
 #endif
