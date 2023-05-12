@@ -31,4 +31,21 @@
 
 #endif
 
+#if defined (GEO_STRUCTS)
+#define GEO_STRUCTS
+#else
+#define GEO_STRUCTS
+
+typedef struct ENTITY;
+typedef struct SET_ENTITY;
+typedef struct COLLISION;
+typedef struct COLLISION_INFO;
+typedef struct ANIMATION_INDEX;
+typedef struct ANIMATION_INFO;
+typedef struct HEIGHT_MAP;
+typedef struct CAMERA_PARAM;
+typedef struct CAMERA_INFO;
+
+#endif
+
 #endif
