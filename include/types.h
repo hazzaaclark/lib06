@@ -35,4 +35,15 @@ static ARGS(&NAME = *ARGS(NAME));
 #define DYNAMIC_ARRAY_LEN (SIZE) \
 ((U32)((sizeof(SIZE) / sizeof(SIZE[0])!sizeof(SIZE) % sizeof(SIZE)[0])))
 
+#if defined(VECTOR_ARRAYS)
+#define VECTOR_ARRAYS
+#else
+#define VECTOR_ARRAYS
+
+typedef F32 VEC_2[];
+typedef F32 VEC_3[];
+typedef F32 VEC_4[];
+
+#endif
+
 #endif
