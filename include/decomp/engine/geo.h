@@ -36,15 +36,15 @@
 #else
 #define GEO_STRUCTS
 
-typedef struct ENTITY;
-typedef struct SET_ENTITY;
-typedef struct COLLISION;
-typedef struct COLLISION_INFO;
 typedef struct ANIMATION_INDEX;
 typedef struct ANIMATION_INFO;
-typedef struct HEIGHT_MAP;
 typedef struct CAMERA_PARAM;
 typedef struct CAMERA_INFO;
+typedef struct COLLISION;
+typedef struct COLLISION_INFO;
+typedef struct ENTITY;
+typedef struct HEIGHT_MAP;
+typedef struct SET_ENTITY;
 
 #endif
 
