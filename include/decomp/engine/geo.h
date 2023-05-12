@@ -38,8 +38,8 @@
 
 typedef struct ANIMATION_INDEX;
 typedef struct ANIMATION_INFO;
-typedef struct CAMERA_PARAM;
 typedef struct CAMERA_INFO;
+typedef struct CAMERA_PARAM;
 typedef struct COLLISION;
 typedef struct COLLISION_INFO;
 typedef struct ENTITY;
