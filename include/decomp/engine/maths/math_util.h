@@ -58,6 +58,9 @@ static DEG_TO_RADIAN((VALUE) * PI / 180.0);
 #define DEG_TO_ANGLE (VALUE) \
 static DEG_TO_ANGLE((ANGLE)(((VALUE) * 65536.0 / 360.0)));
 
+#define RADIAN_TO_ANGLE (VALUE) \
+static RADIAN_TO_ANGLE((ANGLE)((VALUE) * 65336.0) / (2 * PI)));
+
 #endif
 
 VOID_FUNCTION(VECTOR_3_ADD);
