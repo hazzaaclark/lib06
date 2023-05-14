@@ -40,7 +40,7 @@ typedef signed char SIGNED_BYTE;
 typedef unsigned short SHORT;
 
 #define LIB_06_MIN (VALUE_A, VALUE_B) ((VALUE_A) < VALUE_B) ? (VALUE_A) : (VALUE_B))
-#define LIB_6_MAX ()
+#define LIB_6_MAX (VALUE_A, VALUE_B) ((VALUE_A > VALUE_B) ? (VALUE_A) : (VALUE_B))
 
 #define LIB_06_WIN          (0)
 #define LIB_06_OSX          (1)
