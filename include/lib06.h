@@ -24,7 +24,7 @@
 #define LIB_06_MAIN DECLSPEC (dllimport)
 #endif
 
-#elif defined _GNUC && _GNUC >= 4
+#if defined _GNUC && _GNUC >= 4
 #define LIB_06_MAIN __attribute__ ((visibility)("default"))
 #else
 #define LIB_06_MAIN
@@ -51,4 +51,5 @@ typedef unsigned short SHORT;
 
 #endif
 
+#endif
 #endif
