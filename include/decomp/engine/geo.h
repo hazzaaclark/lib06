@@ -44,7 +44,9 @@ typedef struct COLLISION;
 typedef struct COLLISION_INFO;
 typedef struct ENTITY;
 typedef struct HEIGHT_MAP;
+typedef struct OBJECT;
 typedef struct SET_ENTITY;
+typedef struct SET_OBJECT;
 
 #endif
 
