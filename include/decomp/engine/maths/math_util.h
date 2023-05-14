@@ -32,6 +32,25 @@ extern "C"
 {
 	extern F32 SINE_TABLE[];
 	extern F32 COSINE_TABLE[];
+	extern F32 QUATERNION_ANGLE;
 }
+
+#if defined (ENABLE_ROTATION)
+#define ENABLE_ROTATION
+#else
+#define ENABLE_ROTATION
+
+#define ANGLE S32
+
+#define DEG_TO_RADIAN (VALUE) \
+static DEG_TO_RADIAN((VALUE) * PI / 180.0);
+
+#define DEG_TO_ANGLE (VALUE) \
+static DEG_TO_ANGLE((ANGLE)(((VALUE) * 65536.0 / 360.0)));
+
+#endif
+
+VOID_FUNCTION(VECTOR_3_ADD);
+VOID_FUNCTION(VECTOR_3_SET);
 
 #endif
