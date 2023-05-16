@@ -27,16 +27,14 @@ static TYPE(&NAME = *TYPE((ADDRESS));
 #define FUNCTION_POINTER (TYPE, NAME, ARGS, ADDRESS) \
 static TYPE(LIB_06_CDECL *NAME)(ARGS = (TYPE (LIB_06_CDECL *ARGS)ADDRESS);
 
-#define OBJECT_POINTER (ARGS, NAME) \
-static ARGS(&NAME = *ARGS(NAME));
+#define OBJECT_POINTER (NAME, ADDRESS) FUNCTION_POINTER(void NAME(), ADDRESS)
 
 #define CAMERA_POINTER (ARGS, NAME) \
 static ARGS(&NAME = *ARGS(NAME));
 
 #define DYNAMIC_ARRAY (SIZE) sizeof(SIZE)
 
-#define DYNAMIC_ARRAY_LEN (SIZE) \
-((U32)((sizeof(SIZE) / sizeof(SIZE[0])!sizeof(SIZE) % sizeof(SIZE)[0])))
+#define DYNAMIC_ARRAY_LEN (SIZE) (U32)((sizeof(SIZE) / sizeof(SIZE[0])!sizeof(SIZE) % sizeof(SIZE)[0])))
 
 #if defined(VECTOR_ARRAYS)
 #define VECTOR_ARRAYS
