@@ -49,4 +49,23 @@ typedef F32 VEC_4[];
 
 #endif
 
+#if defined(MEMORY)
+#define MEMORY
+#else
+#define MEMORY
+
+typedef struct ALLOC_POOL
+{
+	ALLOC_POOL* ALLOC_INIT(void);
+	ALLOC_POOL* ALLOC_ONLY_POOL(S32* SIZE);
+	ALLOC_POOL* ALLOC_FREE(void);
+};
+
+typedef void(*MEMORY_INIT)(void);
+typedef void(*MEMORY_FREE)(void);
+typedef void(*POOL_RESET)(void);
+typedef void(*ALLOC_LIST)(U32* SIZE);
+
+
+#endif
 #endif
